@@ -1,0 +1,7 @@
+- name: ping
+  gather_facts: false
+  tasks:
+    - name: Test connection with host
+      ansible.windows.win_ping:
+      register: ping
+      failed_when: ping.ping != 'pong'
