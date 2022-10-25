@@ -1,5 +1,4 @@
 - name: ping
-  hosts: windowsNodes
   gather_facts: false
   tasks:
     - name: Test connection with host
